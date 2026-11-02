@@ -33,26 +33,6 @@ I stopped before modelling because I expected the border keypoints to be too noi
 
 A test I would run first: measure the frame-to-frame jitter of the extracted points within healthy patients and compare it to the differences between patients and pathology groups. ACDC provides pathology labels for this. Options to reduce noise are sub-pixel contours, a smooth spline fit to the wall, anatomically defined points such as the RV insertion points, and temporal smoothing over the cycle.
 
-## Repository structure
-
-```
-Datapreprocess.py   # loading, label handling, affine and landmark helpers
-pathmanager.py      # paths to the ACDC files (edit for your setup)
-Parser.py           # [describe]
-<notebook/script>   # [name of the demo that produces the six-rotation figure]
-```
-
-*(Update this section to match the repository.)*
-
-## Setup
-
-```bash
-pip install numpy nibabel torch matplotlib ipython
-```
-
-1. Download ACDC and accept its terms (the data is not included here).
-2. Edit `pathmanager.py` so the paths point to your copy.
-3. Run the demo to produce the aligned-slice figure: `[command or notebook name]`.
 
 ## Label values
 
@@ -62,7 +42,7 @@ The code uses these label values: `Left_Ventricle = 3`, `Right_Ventricle = 5`, `
 
 - Test the noise assumption as described above.
 - Extract the septal-wall contour and sample points at fixed arc-length positions.
-- Use wall thickness, curvature or LV–RV distance over time as features, since they average over many pixels.
+- Use wall thickness, curvature, or LV–RV distance over time as features, since they average over many pixels.
 - Only then build the temporal graph and a graph CNN.
 
 ## Reference
