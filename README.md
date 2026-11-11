@@ -36,14 +36,9 @@ A test I would run first: measure the frame-to-frame jitter of the extracted poi
 
 ## Label values
 
-The code uses these label values: `Left_Ventricle = 3`, `Right_Ventricle = 5`, `Myocardium = 1`. [State here how the labels were produced or remapped from the ACDC originals.]
+The code uses these label values: `Left_Ventricle = 3`, `Right_Ventricle = 5`, `Myocardium = 1`.
 
-## Possible next steps
 
-- Test the noise assumption as described above.
-- Extract the septal-wall contour and sample points at fixed arc-length positions.
-- Use wall thickness, curvature, or LV–RV distance over time as features, since they average over many pixels.
-- Only then build the temporal graph and a graph CNN.
 
 ## Reference
 
