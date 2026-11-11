@@ -49,6 +49,4 @@ The code uses these label values: `Left_Ventricle = 3`, `Right_Ventricle = 5`, `
 
 Bernard et al., "Deep Learning Techniques for Automatic MRI Cardiac Multi-structures Segmentation and Diagnosis: Is the Problem Solved?", IEEE Transactions on Medical Imaging, 2018.
 
-## License
 
-[Add a license, e.g. MIT. Note that ACDC has its own terms of use.]
